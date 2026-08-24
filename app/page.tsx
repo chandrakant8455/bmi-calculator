@@ -106,8 +106,8 @@ export default function Page() {
 
           <div className="flex flex-col rounded-[2rem] p-6 text-primary-foreground sm:p-9" style={{ backgroundColor: 'rgba(0, 159, 188, 0.99)' }}>
             <div className="flex items-center justify-between">
-              <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-primary-foreground/65">Your result</p>
-              <span className="rounded-full border border-primary-foreground/20 px-3 py-1 text-xs text-primary-foreground/75">Live estimate</span>
+              <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-primary-foreground/65" style={{ color: '#fdfaf3' }}>Your result</p>
+              <span className="rounded-full border border-primary-foreground/20 px-3 py-1 text-xs text-primary-foreground/75" style={{ color: '#fdfaf3' }}>Live estimate</span>
             </div>
             <div className="flex flex-1 flex-col justify-center py-14 sm:py-20">
               <p className="font-serif text-8xl font-semibold tracking-[-0.08em]">{bmi ? bmi.toFixed(1) : '—'}</p>
@@ -117,10 +117,10 @@ export default function Page() {
                   <div className="absolute inset-y-0 left-0 w-[23%] bg-blue-300" /><div className="absolute inset-y-0 left-[23%] w-[23%] bg-green-300" /><div className="absolute inset-y-0 left-[46%] w-[18%] bg-amber-300" /><div className="absolute inset-y-0 left-[64%] right-0 bg-coral" />
                   {bmi && <div className="absolute -top-2 size-6 -translate-x-1/2 rounded-full border-4 border-primary bg-primary-foreground shadow-md" style={{ left: `${gaugePosition}%` }} aria-label={`BMI marker at ${bmi.toFixed(1)}`} />}
                 </div>
-                <div className="mt-4 flex justify-between font-mono text-[10px] uppercase tracking-wider text-primary-foreground/55"><span>12</span><span>18.5</span><span>25</span><span>30+</span><span>40</span></div>
+                <div className="mt-4 flex justify-between font-mono text-[10px] uppercase tracking-wider text-primary-foreground/55"><span style={{ color: '#fdfaf3' }}>12</span><span style={{ color: '#fdfaf3' }}>18.5</span><span style={{ color: '#fdfaf3' }}>25</span><span style={{ color: '#fdfaf3' }}>30+</span><span style={{ color: '#fdfaf3' }}>40</span></div>
               </div>
             </div>
-            <div className="flex items-center justify-between border-t border-primary-foreground/15 pt-5 text-sm text-primary-foreground/70"><span>Healthy range</span><span className="font-mono font-semibold text-primary-foreground">18.5 — 24.9</span></div>
+            <div className="flex items-center justify-between border-t border-primary-foreground/15 pt-5 text-sm text-primary-foreground/70"><span style={{ color: '#ffffff' }}>Healthy range</span><span className="font-mono font-semibold text-primary-foreground">18.5 — 24.9</span></div>
           </div>
         </section>
 
