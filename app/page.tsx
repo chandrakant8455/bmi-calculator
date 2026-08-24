@@ -46,7 +46,7 @@ export default function Page() {
   }
 
   return (
-    <main className="min-h-screen bg-background px-5 py-6 text-foreground sm:px-8 sm:py-10">
+    <main className="min-h-screen rounded-2xl bg-background px-5 py-6 text-foreground sm:px-8 sm:py-10">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10">
         <header className="flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -104,7 +104,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="flex flex-col rounded-[2rem] bg-primary p-6 text-primary-foreground sm:p-9">
+          <div className="flex flex-col rounded-[2rem] p-6 text-primary-foreground sm:p-9" style={{ backgroundColor: 'rgba(0, 159, 188, 0.99)' }}>
             <div className="flex items-center justify-between">
               <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-primary-foreground/65">Your result</p>
               <span className="rounded-full border border-primary-foreground/20 px-3 py-1 text-xs text-primary-foreground/75">Live estimate</span>
